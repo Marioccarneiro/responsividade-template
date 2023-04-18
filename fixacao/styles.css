@@ -23,7 +23,7 @@
   
   main aside,
   main section {
-    padding: 10px;
+    padding: 1px;
   }
   
   .left {
@@ -39,10 +39,38 @@
   }
   
   footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     background-color: black;
     color: white;
     padding: 20px;
     width: 100%;
+  }
+
+  @media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    header{
+      text-align: center;
+
+    }
+    
+    main{
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+
+    footer{
+      background-color: black;
+      color: white;
+      margin-top: 8rem;
+      padding: 20px;
+      width: 100%;
+      
+    }
+
+  main aside, main section {
+    
+    padding: 1px;
+    margin: 20px;
+  }
   }
